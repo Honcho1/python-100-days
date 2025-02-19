@@ -1,4 +1,4 @@
-# Day 01: Band Name Generator
+# Day 001: Band Name Generator
 
 ## Project Description
 
