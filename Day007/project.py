@@ -15,3 +15,6 @@ display = []
 
 for letter in chosen_word:
     display.append("_")
+
+while "_" in display and lives > 0:
+    guess = input("Guess a letter: ").lower()
