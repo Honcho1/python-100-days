@@ -34,3 +34,6 @@ while "_" in display and lives > 0:
     print(f"{' '.join(display)}")
     from hangman_art import stages
     print(stages[lives])
+
+if "_" not in display:
+    print("Congratulations! You have won!")
