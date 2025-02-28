@@ -18,3 +18,9 @@ for letter in chosen_word:
 
 while "_" in display and lives > 0:
     guess = input("Guess a letter: ").lower()
+    if guess in display:
+        print(f"You have already guessed {guess}")
+    for position in range(len(chosen_word)):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = guess
