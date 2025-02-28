@@ -26,3 +26,4 @@ while "_" in display and lives > 0:
             display[position] = guess
     if guess not in chosen_word:
         print(f"You guessed {guess}, that's not in the word. You lose a life.")
+        lives -= 1
