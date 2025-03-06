@@ -26,4 +26,11 @@ def cipher_program():
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
     caesar(text, shift, direction)
-        
+
+def main():
+    while True:
+        cipher_program()
+        choice = input("Would you like to restart the cipher program? Type 'yes' or 'no'.\n")
+        if choice != "yes":
+            print("Goodbye!")
+            break
