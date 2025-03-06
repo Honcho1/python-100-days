@@ -17,4 +17,13 @@ def caesar(message, shift_amount, action):
             result.append(char)
     final_result = "".join(result)
     print(f"The {action}d text is: {final_result}")
+
+from art import logo
+print(logo)
+
+def cipher_program():
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
+    caesar(text, shift, direction)
         
