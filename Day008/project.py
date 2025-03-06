@@ -34,3 +34,6 @@ def main():
         if choice != "yes":
             print("Goodbye!")
             break
+
+if __name__ == "__main__":
+    main()
